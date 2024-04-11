@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compact</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="compactimg/COMPACTlogo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">DISCOVER</a></li>
+                    <li><a href="">SIGN IN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>All Your Glam Essentials </h1>
+            <p>Virtually In One Place</p>
+            <a href="" class="hero-btn">Learn More</a>
+        </div>
+    </section>
+    
+<!---------- Key Features ----------->
+    
+    <section class="feature">
+        <h1>Platform Features</h1>
+        <p>How we can elevate your cosmetic experience</p>
+        <div class="row">
+            <div class="feature-col">
+                <h3>Digital Makeup Bag</h3>
+                <p>Catalog all your beauty essentials in your own digital makeup bag to create quick access and organization.</p>
+            </div>
+            <div class="feature-col">
+                <h3>Expiration Reminders</h3>
+                <p>Receive warnings on when you should replace certain items based on their expiration date, as well as offers from certain brands to replace your old item. 
+                </p>
+            </div>
+            <div class="feature-col">
+                <h3>Beauty Industry Insider</h3>
+                <p>Access the exact makeup products that someone used in a particular makeup look just by tapping on their linked digital makeup bag, all organized in one place, one tap away. 
+                </p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Team ---------->
+    
+    <section class="team">
+        <h1>Our Team</h1>
+        <p>Meet the leaders behind Compact</p>
+            <div class="row">
+                <div class="team-col">
+                    <img src="compactimg/compactliz.png">
+                    <div class="layer">
+                        <h3>Lisvanny Polanco</h3>
+                    </div>
+                </div>
+                <div class="team-col">
+                    <img src="compactimg/compactden.png">
+                    <div class="layer">
+                        <h3>Denise Sanchez</h3>
+                    </div>
+                </div>
+                <div class="team-col">
+                    <img src="compactimg/compactmeg.png">
+                    <div class="layer">
+                        <h3>Megan Huynh</h3>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+ 
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>COMPACT</h4>
+        <p>All your glam essentials, virtually in one place.
+        </p>
+        <div class="icons">
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            
+        </div>
+</section>    
+  
+  
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>
