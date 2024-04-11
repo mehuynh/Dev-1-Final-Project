@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(white,pink);
+    background-image: linear-gradient(white,rgb(255,163,202));
     color: rgb(0, 0, 0);
     font-size: 8em;
     font-family: 'Inconsolata';
