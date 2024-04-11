@@ -6,8 +6,12 @@
 }
 
 body{
-    background: pink;
+    background: linear-gradient(to bottom, white 0%, rgb(255, 163, 202) 100%);    
     padding: 60px;
+}
+
+html, body{
+    height: 100%;
 }
 
 .container{
@@ -90,7 +94,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
 }
 
 .recover a:hover{
-    color: pink;
+    color: rgb(255, 163, 202);
     text-decoration: underline;
 }
 
@@ -101,14 +105,14 @@ input:focus~label,input:not(:placeholder-shown)~label{
     outline: none;
     border: none;
     width: 100%;
-    background: hotpink;
+    background: rgb(255, 163, 202);
     color: white;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .btn:hover{
-    background: pink;
+    background: hotpink;
 }
 
 .or{
@@ -128,15 +132,15 @@ input:focus~label,input:not(:placeholder-shown)~label{
     border-radius: 40%;
     font-size: 1.5rem;
     cursor: pointer;
-    border: 2px solid pink;
+    border: 2px solid rgb(255, 163, 202);
     margin: 0 15px;
     transition: 1s;
 }
 
 .icons i:hover{
-    background: pink;
+    background: rgb(249, 232, 235);
     font-size: 1.6rem;
-    border: 2px solid hotpink;
+    border: 2px solid rgb(255, 163, 202);
 }
 
 .links{
@@ -147,7 +151,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
 }
 
 button{
-    color: hotpink;
+    color: rgb(255, 163, 202);
     border: none;
     background-color: transparent;
     font-size: 1rem;
@@ -156,5 +160,16 @@ button{
 
 button:hover{
     text-decoration: underline;
-    color: pink;
+    color: hotpink;
+}
+
+.image {
+    text-align: center; 
+    margin:30px; 
+}
+
+.image img {
+    width: 50%; 
+    display: block; 
+    margin: 0 auto; 
 }
