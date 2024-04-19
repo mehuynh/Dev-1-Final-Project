@@ -60,20 +60,21 @@ img {
   height: auto;
 }
 
+/* Ensure sections end where main content ends */
+
 .section {
-  padding: 4.5rem 0 2rem;
-}
-
-.section__title {
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
+  padding: 4.5rem 0 2rem; /* Adjust padding as needed */
+  overflow: hidden; /* Ensure content doesn't overflow */
   text-align: center;
-  margin-bottom: 1.5rem;
+  min-height: calc(100vh - var(--header-height)); /* Ensure section ends where main content ends */
 }
 
-.section__height {
-  height: 100vh;
+/* Adjust padding for main content to prevent overlap with fixed header */
+
+main {
+  padding-top: calc(var(--header-height) + 20px); /* Adjust padding-top as needed */
 }
+
 
 /*=============== LAYOUT ===============*/
 .container {
@@ -215,4 +216,125 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.home-content {
+  text-align: center;
+}
+
+.home-title {
+  color: var(--title-color);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  color: #000000;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-direction: column; /* Change to column */
+  align-items: center; /* Align items to center */
+  gap: 20px; /* Add gap between boxes */
+}
+
+.feature-box {
+  background-color: rgba(255, 163, 202);
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-box strong {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  text-align: center;
+}
+
+/* Styles for the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: var(--title-color);
+  padding: 10px 20px;
+  font-size: var(--normal-font-size);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropbtn::after {
+  content: '\25BE'; /* Unicode character for downward arrow */
+  margin-left: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: var(--title-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.product-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.product-box img {
+  width: 100px; /* Adjust the width of the image */
+  height: auto;
+  margin-right: 20px; /* Add spacing between image and text */
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-expiration {
+  color: #666;
 }
