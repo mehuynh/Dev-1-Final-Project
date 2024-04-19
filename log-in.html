@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/my.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="image"><img src="COMPACTlogo.png" alt="Image 1"></div>
+            <div class="top-header">
+                <header>Login</header>
+            </div>
+            <form id="loginForm">
+                <div class="input-field">
+                    <label for="email">
+                        <input type="email" class="input" id="email" placeholder="Email" required>
+                        <i class="bx bx-envelope"></i>
+                    </label>
+                </div>
+                <div class="input-field">
+                    <label for="password">
+                        <input type="password" class="input" id="password" placeholder="Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </label>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Login">
+                </div>
+            </form>
+            
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check"> Remember Me</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            
+            if (email.trim() === "" || password.trim() === "") {
+                alert("Please enter a valid email and password.");
+                return;
+            }
+            
+            window.location.href = "new.html";
+        });
+    </script>  
+</body>
+</html>
