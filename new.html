@@ -24,27 +24,32 @@
                         </li>
                         
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">
+                            <a href="#profile" class="nav__link">
                                 <i class='bx bx-user nav__icon'></i>
                                 <span class="nav__name">Profile</span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
+                            <a href="#discover" class="nav__link">
                                 <i class='bx bx-book-alt nav__icon'></i>
                                 <span class="nav__name">Discover</span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
+                            <a href="#makeup-bag" class="nav__link">
                                 <i class='bx bx-briefcase-alt nav__icon'></i>
                                 <span class="nav__name">Makeup Bag</span>
                             </a>
                         </li>
 
-                       
+                        <li class="nav__item">
+                            <a href="#messenger" class="nav__link">
+                                <i class='bx bx-message-square-detail nav__icon'></i>
+                                <span class="nav__name">Messenger</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -55,21 +60,50 @@
         <main>
             <section class="container section section__height" id="home">
                 <h2 class="section__title">Home</h2>
+                <div class="home-content">
+                    <h3 class="home-title">All Your Glam Essentials</h3>
+                    <p class="home-subtitle">Virtually In One Place</p>
+                    <div class="feature-boxes">
+                        <div class="feature-box">
+                            <strong>Digital Makeup Bag</strong>
+                            <p>Catalog all your beauty essentials in your own digital makeup bag to create quick access and organization.</p>
+                        </div>
+                        <div class="feature-box">
+                            <strong>Expiration Reminders</strong>
+                            <p>Receive warnings on when you should replace certain items based on their expiration date, as well as offers from certain brands to replace your old item.</p>
+                        </div>
+                        <div class="feature-box">
+                            <strong>Beauty Industry Insider</strong>
+                            <p>Access the exact makeup products that someone used in a particular makeup look just by tapping on their linked digital makeup bag, all organized in one place, one tap away.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="container section section__height" id="about">
+            <section class="container section section__height" id="profile">
                 <h2 class="section__title">Profile</h2>
             </section>
 
-            <section class="container section section__height" id="skills">
+            <section class="container section section__height" id="discover">
                 <h2 class="section__title">Discover</h2>
             </section>
 
-            <section class="container section section__height" id="portfolio">
+            <section class="container section section__height" id="makeup-bag">
                 <h2 class="section__title">Makeup Bag</h2>
+                <div class="dropdown" onclick="event.preventDefault();">
+                    <button class="dropbtn">Catalog</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showProducts('Daily Routine 2024')">Daily Routine 2024</a>
+                        <!-- Add more options for different years -->
+                    </div>
+                </div>
+            
+                <div id="productContainer" class="product-container">
+                    <!-- Products will be displayed here -->
+                </div>
             </section>
 
-            <section class="container section section__height" id="contactme">
+            <section class="container section section__height" id="messenger">
                 <h2 class="section__title">Messenger</h2>
             </section>
         </main>
