@@ -421,6 +421,31 @@ input[type="date"] {
     transition: .3s;
 }
 
+.save-changes {
+  position: absolute;
+  bottom: 30px; /* Adjust the bottom position as needed */
+  left: 5px; /* Adjust the right position as needed */
+  margin-left: 100px;
+  background: none;
+  border: none;
+  color: rgb(255,163,202);
+  cursor: pointer;
+  font-size: 14px; 
+  padding: 0px;
+  margin-top: px;
+}
 
-
+.log-out{
+  position: absolute;
+  bottom: 30px; /* Adjust the bottom position as needed */
+  right: 5px; /* Adjust the right position as needed */
+  margin-right: 110px;
+  background: none;
+  border: none;
+  color: rgb(255,163,202);
+  cursor: pointer;
+  font-size: 14px; 
+  padding: 0px;
+  margin-top: px;
+}
 

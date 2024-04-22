@@ -93,3 +93,4 @@ function removeImage() {
 }
 
 document.querySelector('.remove-image-button').addEventListener('click', removeImage);
+
