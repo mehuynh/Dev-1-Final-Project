@@ -60,19 +60,15 @@ img {
   height: auto;
 }
 
-/* Ensure sections end where main content ends */
-
 .section {
-  padding: 4.5rem 0 2rem; /* Adjust padding as needed */
-  overflow: hidden; /* Ensure content doesn't overflow */
+  padding: 0rem 0 2rem; /* Updated padding */
+  overflow: hidden;
   text-align: center;
-  min-height: calc(100vh - var(--header-height)); /* Ensure section ends where main content ends */
+  min-height: calc(100vh - var(--header-height));
 }
 
-/* Adjust padding for main content to prevent overlap with fixed header */
-
 main {
-  padding-top: calc(var(--header-height) + 20px); /* Adjust padding-top as needed */
+  padding-top: calc(var(--header-height) + 20px); 
 }
 
 
@@ -92,6 +88,7 @@ main {
   background-color: var(--container-color);
   z-index: var(--z-fixed);
   transition: .4s;
+  margin-bottom: 0; 
 }
 
 .nav {
@@ -103,6 +100,7 @@ main {
 
 .nav__img {
   width: 130px;
+  height: 20px;
 }
 
 .nav__logo {
@@ -137,7 +135,7 @@ main {
   align-items: center;
   row-gap: 4px;
   color: var(--title-color);
-  font-weight: 600;
+  font-weight: 6000;
 }
 
 .nav__list {
@@ -151,6 +149,10 @@ main {
 
 .nav__icon {
   font-size: 1.5rem;
+}
+
+.nav__menu {
+  margin-bottom: 10px; 
 }
 
 .active-link {
@@ -172,8 +174,6 @@ main {
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
-
-
 
 @media screen and (min-width: 576px) {
   .nav__list {
@@ -238,9 +238,9 @@ main {
 
 .feature-boxes {
   display: flex;
-  flex-direction: column; /* Change to column */
-  align-items: center; /* Align items to center */
-  gap: 20px; /* Add gap between boxes */
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
 }
 
 .feature-box {
@@ -264,7 +264,6 @@ main {
   text-align: center;
 }
 
-/* Styles for the dropdown menu */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -281,7 +280,7 @@ main {
 }
 
 .dropbtn::after {
-  content: '\25BE'; /* Unicode character for downward arrow */
+  content: '\25BE'; 
   margin-left: 8px;
 }
 
@@ -294,6 +293,9 @@ main {
   z-index: 1;
   border-radius: 5px;
   overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out;
 }
 
 .dropdown-content a {
@@ -311,7 +313,6 @@ main {
   display: block;
 }
 
-
 .product-box {
   display: flex;
   align-items: center;
@@ -322,9 +323,9 @@ main {
 }
 
 .product-box img {
-  width: 100px; /* Adjust the width of the image */
+  width: 100px; 
   height: auto;
-  margin-right: 20px; /* Add spacing between image and text */
+  margin-right: 20px; 
 }
 
 .product-details {
@@ -338,3 +339,88 @@ main {
 .product-expiration {
   color: #666;
 }
+
+/*=============PROFILE PAGE=============*/
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.profile-picture img {
+  width: 150px; /* Adjust the size of the profile picture as needed */
+  height: 150px;
+  border-radius: 50%; /* Make the profile picture round */
+  margin-bottom: 20px; /* Adjust the margin bottom as needed */
+  margin-top: 40px;
+}
+
+.profile-info {
+  margin-bottom: 15px; /* Adjust the margin bottom between profile info fields */
+}
+
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust the margin bottom as needed */
+}
+
+.profile-picture img {
+  width: 120px; 
+  height: 120px;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.profile-picture button {
+  margin-top: -10px; /* Adjust the margin top for spacing between the image and the button */
+}
+
+.profile-info {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.remove-image-button {
+  background: none;
+  border: none;
+  color: rgb(255,163,202);
+  cursor: pointer;
+  font-size: 14px; 
+  padding: 0px;
+  margin-top: px;
+}
+
+#profile-photo {
+  display: none;
+}
+
+.file-label{
+  font-size: 14px;
+  color: rgb(255,163,202); 
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  margin-top: -10px; 
+}
+
+input[type="text"],
+input[type="date"] {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.412);
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+
