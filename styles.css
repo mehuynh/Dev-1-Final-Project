@@ -152,7 +152,12 @@ main {
 }
 
 .nav__menu {
-  margin-bottom: 10px; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0; /* Add padding to lift content above */
+  background-color: var(--container-color);
+  z-index: var(--z-fixed);
 }
 
 .active-link {
