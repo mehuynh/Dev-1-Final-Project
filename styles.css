@@ -498,7 +498,8 @@ input[type="date"] {
   z-index: 3;
   padding: 30px;
   border-radius: 20px;
-  background-color: rgba(239, 231, 209, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
   margin-top: -20px;
   flex-grow: 1;
   transition: background-color 0.25s ease-in-out;
@@ -511,19 +512,19 @@ input[type="date"] {
   margin-bottom: 20px;
 }
 .section .project-container .project-info a {
-  color: rgb(117, 60, 20);
+  color: rgba(255, 163, 202);
   display: inline-block;
   text-decoration: none;
 }
 .section .project-container .project-info a:hover {
-  color: rgb(54, 73, 43);
+  color: rgb(251, 215, 230);
   text-decoration: underline;
 }
 .section .project-container:hover .project-info {
-  background-color: rgba(239, 231, 209, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 .section .project-container:hover h2 {
-  color: rgb(130, 89, 35);
+  color: rgba(255, 163, 202);
 }
 .section .project-container:hover {
   transform: scale(1.05);
