@@ -354,15 +354,18 @@ main {
 }
 
 .profile-picture img {
-  width: 150px; /* Adjust the size of the profile picture as needed */
-  height: 150px;
-  border-radius: 50%; /* Make the profile picture round */
-  margin-bottom: 20px; /* Adjust the margin bottom as needed */
-  margin-top: 40px;
+  width: 120px; 
+  height: 120px;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .profile-info {
-  margin-bottom: 15px; /* Adjust the margin bottom between profile info fields */
+  margin-bottom: 15px; 
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-picture {
@@ -370,24 +373,18 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px; /* Adjust the margin bottom as needed */
+  margin-bottom: 20px; 
 }
 
-.profile-picture img {
-  width: 120px; 
-  height: 120px;
-  border-radius: 50%; 
-  margin-bottom: 10px;
-}
 
 .profile-picture button {
-  margin-top: -10px; /* Adjust the margin top for spacing between the image and the button */
-}
-
-.profile-info {
-  padding-top: 15px;
-  display: flex;
-  flex-direction: column;
+  margin-top: -10px;
+  background: none;
+  border: none;
+  color: rgb(255,163,202);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0px;
 }
 
 .remove-image-button {
@@ -397,7 +394,6 @@ main {
   cursor: pointer;
   font-size: 14px; 
   padding: 0px;
-  margin-top: px;
 }
 
 #profile-photo {
@@ -421,37 +417,35 @@ input[type="date"] {
     height: 45px;
     outline: none;
     width: 100%;
-    background: rgba(0, 0, 0, 0.412);
+    background: linear-gradient(45deg, rgb(255,163,202), #f4dfe9);
     cursor: pointer;
     transition: .3s;
+    color:#FFFFFF;
+    padding: 0 20px;
+}
+
+.save-changes,
+.log-out {
+  position: absolute;
+  bottom: 30px; 
+  color: rgb(255,163,202);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0px;
 }
 
 .save-changes {
-  position: absolute;
-  bottom: 30px; /* Adjust the bottom position as needed */
-  left: 5px; /* Adjust the right position as needed */
+  left: 5px; 
   margin-left: 100px;
   background: none;
   border: none;
-  color: rgb(255,163,202);
-  cursor: pointer;
-  font-size: 14px; 
-  padding: 0px;
-  margin-top: px;
 }
 
-.log-out{
-  position: absolute;
-  bottom: 30px; /* Adjust the bottom position as needed */
-  right: 5px; /* Adjust the right position as needed */
+.log-out {
+  right: 5px; 
   margin-right: 110px;
   background: none;
   border: none;
-  color: rgb(255,163,202);
-  cursor: pointer;
-  font-size: 14px; 
-  padding: 0px;
-  margin-top: px;
 }
 
 /*=============DISCOVER PAGE=============*/
@@ -553,3 +547,54 @@ input[type="date"] {
     transform: translateY(0) skewY(0deg);
   }
 }
+
+/*=============== HOME PAGE ===============*/
+
+.home-content {
+  text-align: center;
+}
+
+.home-title {
+  color: var(--title-color);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  color: #000000;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.feature-box {
+  background-color: rgba(255, 163, 202);
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-box strong {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  text-align: center;
+}
+
+
