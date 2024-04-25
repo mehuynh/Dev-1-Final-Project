@@ -94,3 +94,34 @@ function removeImage() {
 
 document.querySelector('.remove-image-button').addEventListener('click', removeImage);
 
+// Sample expiration dates (you can replace these with your actual data)
+const makeupDates = [
+    { name: "Foundation", date: "2024-05-15" },
+    { name: "Mascara", date: "2024-06-01" },
+    { name: "Lipstick", date: "2024-05-30" }
+    // Add more makeup items with their expiration dates
+];
+
+// Function to generate the calendar
+function generateCalendar() {
+    const calendarContainer = document.getElementById('calendar-container');
+
+    // Clear previous content
+    calendarContainer.innerHTML = '';
+
+    // Create a list for displaying makeup items and their expiration dates
+    const makeupList = document.createElement('ul');
+
+    // Iterate through makeup dates and create list items
+    makeupDates.forEach(makeup => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${makeup.name} - Expiring on ${makeup.date}`;
+        makeupList.appendChild(listItem);
+    });
+
+    // Append the makeup list to the calendar container
+    calendarContainer.appendChild(makeupList);
+}
+
+// Call the function to generate the calendar on page load
+generateCalendar();
