@@ -37,7 +37,7 @@ function showProducts(year) {
         productBox.classList.add('product-box');
 
         var productImage = document.createElement('img');
-        productImage.src = 'compactimg/' + product.image; 
+        productImage.src = 'makeupbagimg/' + product.image; 
         productBox.appendChild(productImage);
 
         var productDetails = document.createElement('div');
