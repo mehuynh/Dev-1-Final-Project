@@ -16,4 +16,15 @@
         </div>
       </main>
 </body>
+<script>
+    window.onload = function() {
+        if (sessionStorage.getItem('redirectAfterLoad') === 'true') {
+            sessionStorage.removeItem('redirectAfterLoad'); 
+            
+            setTimeout(function() {
+                window.location.href = "../home.html";
+            }, 4000); 
+        }
+    };
+</script>
 </html>

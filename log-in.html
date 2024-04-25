@@ -55,8 +55,10 @@
                 alert("Please enter a valid email and password.");
                 return;
             }
-            
-            window.location.href = "home.html";
+        
+            window.location.href = "loading-content/loading.html";
+        
+            sessionStorage.setItem('redirectAfterLoad', 'true');
         });
     </script>  
 </body>
