@@ -37,7 +37,7 @@ function showProducts(year) {
         productBox.classList.add('product-box');
 
         var productImage = document.createElement('img');
-        productImage.src = 'compactimg/' + product.image; 
+        productImage.src = 'makeupbagimg/' + product.image; 
         productBox.appendChild(productImage);
 
         var productDetails = document.createElement('div');
@@ -63,12 +63,45 @@ function showProducts(year) {
 function getProductsData(year) {
     if (year === 'Daily Routine 2024') {
         return [
-            { name: 'Fenty Beauty Foundation', image: 'foundation.png', expirationDate: '2025-04-18' },
-            { name: 'Kevyn Aucoin Volume Mascara', image: 'mascara.png', expirationDate: '2025-04-20' },
+            { name: 'Fenty Beauty Foundation', image: 'foundation2024.png', expirationDate: '2025-04-18' },
+            { name: 'Tarte Shape Tape Full Coverage Concealer', image: 'concealer2024.png', expirationDate: '2025-04-18' },
+            { name: 'Kevyn Aucoin Volume Mascara', image: 'mascara2024.png', expirationDate: '2025-04-20' },
+            { name: 'Naked3 Eyeshadow Palette', image: 'eyeshadow2024.png', expirationDate: '2025-02-12' },
+            { name: 'e.l.f. Glow Reviver Lip Oil', image: 'lipoil2024.png', expirationDate: '2026-05-19' },
+            { name: 'MAC Lip Liner Pencil', image: 'lipliner.png', expirationDate: '2025-02-12' },
+            
+        ];
+    }
+    if (year === 'Daily Routine 2023') {
+        return [
+            { name: 'HUDA BEAUTY Foundation', image: 'foundation2023.png', expirationDate: '2025-04-18' },
+            { name: 'e.l.f. Cosmetics Hydrating Camo Concealer', image: 'concealer2023.png', expirationDate: '2025-04-18' },
+            { name: 'Maybelline Lash Sensational Mascara', image: 'mascara2023.png', expirationDate: '2025-03-05' },
+            { name: 'Fenty Beauty Gloss Bomb Universal Lip Luminizer', image: 'lipgloss2023.png', expirationDate: '2025-02-12' },
+            { name: 'MAC Lip Liner Pencil', image: 'lipliner.png', expirationDate: '2025-02-12' },
+            
+        ];
+    }
+    if (year === 'Daily Routine 2022') {
+        return [
+            { name: 'Maybelline Fit Me Matte + Poreless Oil Free Liquid Foundation', image: 'foundation2022.png', expirationDate: '2025-04-18' },
+            { name: 'e.l.f. Cosmetics Hydrating Camo Concealer', image: 'concealer2023.png', expirationDate: '2025-04-18' },
+            { name: 'Lash Idôle Lash-Lifting & Volumizing Mascara', image: 'mascara2022.png', expirationDate: '2025-04-20' },
+            { name: 'Dior Addict Lip Glow Oil', image: 'lipgloss2022.png', expirationDate: '2025-02-12' },
+            { name: 'MAC Lip Liner Pencil', image: 'lipliner.png', expirationDate: '2025-02-12' },
+            
+        ];
+    }
+    if (year === 'Daily Routine 2021') {
+        return [
+            { name: 'Fenty Beauty Foundation', image: 'foundation2022.png', expirationDate: '2025-04-18' },
+            { name: 'e.l.f. Cosmetics Hydrating Camo Concealer', image: 'concealer2023.png', expirationDate: '2025-04-18' },
+            { name: 'Kevyn Aucoin Volume Mascara', image: 'mascara2023.png', expirationDate: '2025-04-20' },
+            { name: 'e.l.f. Glow Reviver Lip Oil', image: 'lipoil2024.png', expirationDate: '2025-02-12' },
+            
         ];
     }
 }
-
 /*=============== PROFILE PAGE ===============*/
 // --------------change profile pic------------//
 function previewProfilePhoto(event) {
