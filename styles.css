@@ -164,7 +164,7 @@ h2{
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 10px 0; /* Add padding to lift content above */
+  padding: 10px 0; 
   background-color: var(--container-color);
   z-index: var(--z-fixed);
 }
@@ -204,7 +204,7 @@ h2{
     padding: 7rem 0 2rem;
   }
   .nav {
-    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+    height: calc(var(--header-height) + 1.5rem); 
   }
   .nav__img {
     display: none;
@@ -355,7 +355,7 @@ h2{
   color: #666;
 }
 
-/*=============PROFILE PAGE=============*/
+/*=============SETTINGS PAGE=============*/
 #profile {
   display: flex;
   flex-direction: column;
@@ -385,7 +385,6 @@ h2{
   justify-content: center;
   margin-bottom: 20px; 
 }
-
 
 .profile-picture button {
   margin-top: -10px;
@@ -427,7 +426,7 @@ input[type="date"] {
     height: 45px;
     outline: none;
     width: 100%;
-    background: linear-gradient(45deg, rgb(255,163,202), #f4dfe9);
+    background: rgb(255,163,202);
     cursor: pointer;
     transition: .3s;
     color:#FFFFFF;
@@ -437,16 +436,25 @@ input[type="date"] {
 .save-changes,
 .log-out {
   position: absolute;
-  bottom: 30px; 
+  bottom: -30px; 
   color: rgb(255,163,202);
   cursor: pointer;
   font-size: 14px;
-  padding: 0px;
+  padding: 7px; 
+  background-color: transparent; /* Remove background color */
+  border: 2px solid rgb(255,163,202); /* Add border */
+  transition: all 0.3s ease; 
+}
+
+.save-changes:hover,
+.log-out:hover {
+  background-color: rgb(255,163,202); 
+  color: #fff; 
 }
 
 .save-changes {
   left: 5px; 
-  margin-left: 100px;
+  margin-left: 110px;
   background: none;
   border: none;
 }
@@ -456,6 +464,31 @@ input[type="date"] {
   margin-right: 110px;
   background: none;
   border: none;
+}
+
+.fa-gear{
+  color: black;
+}
+
+.fa-arrow-left{
+  color: black;
+}
+
+.edit-profile-container {
+  position: relative;
+  align-items: center;
+  margin-bottom: -50px; 
+}
+
+.edit-profile-container h2 {
+  color: rgb(0, 0, 0); 
+}
+
+.arrow{
+  position: relative;
+  top: -65px; 
+  padding-right: 350px;
+  font-size: 25px;
 }
 
 /*=============DISCOVER PAGE=============*/

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://kit.fontawesome.com/800841e5eb.js" crossorigin="anonymous"></script>
@@ -41,9 +41,45 @@
             <a href="home.html">
                 <img src="compactimg/COMPACTlogo.png" alt="" class="nav__img">
             </a>
-            <a href="settings.html" class="settings-icon">
-                <i class="fa-solid fa-gear"></i>            
-            </a>
         </nav>
     </header>
+    <main>
+        <section class="container section section__height" id="profile">
+            <div class="edit-profile-container">
+                <h2>Edit Profile</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+            </div>
+            <div class="profile-picture">
+                <img id="profile-image" src="default.jpeg" alt="Profile Picture">
+                <form id="profile-form">
+                    <div class="profile-info">
+                        <label for="profile-photo" class="file-label">Change Profile Picture</label>
+                        <input type="file" id="profile-photo" accept="image/*">
+                    </div>
+                </form>
+                <button class="remove-image-button" onclick="removeImage()">Remove Image</button>
+            </div>
+                 <div class="profile-info">
+                    <label for="first-name">Name</label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="profile-info">
+                    <label for="last-name">Username</label>
+                    <input type="text" id="last-name">
+                </div>
+                <div class="profile-info">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+                <button class=save-changes type="submit">Save Changes</button>
+            </form>
+            <a href="log-in.html"><button class=log-out onclick="logout()">Log Out</button></a>
+            
+
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
 </html>
