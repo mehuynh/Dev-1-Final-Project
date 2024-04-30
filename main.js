@@ -94,9 +94,9 @@ function getProductsData(year) {
     }
     if (year === 'Daily Routine 2021') {
         return [
-            { name: 'Fenty Beauty Foundation', image: 'foundation2022.png', expirationDate: '2025-04-18' },
+            { name: 'Maybelline Fit Me Matte + Poreless Oil Free Liquid Foundation', image: 'foundation2022.png', expirationDate: '2025-04-18' },
             { name: 'e.l.f. Cosmetics Hydrating Camo Concealer', image: 'concealer2023.png', expirationDate: '2025-04-18' },
-            { name: 'Kevyn Aucoin Volume Mascara', image: 'mascara2023.png', expirationDate: '2025-04-20' },
+            { name: 'Maybelline Lash Sensational Mascara', image: 'mascara2023.png', expirationDate: '2025-04-20' },
             { name: 'e.l.f. Glow Reviver Lip Oil', image: 'lipoil2024.png', expirationDate: '2025-02-12' },
             
         ];

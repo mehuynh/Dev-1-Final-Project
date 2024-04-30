@@ -277,6 +277,7 @@ h2{
   text-align: center;
 }
 
+/*=============== MAKEUP BAG ===============*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -331,7 +332,8 @@ h2{
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  border: 1px solid #ccc;
+  background-color: rgb(0, 0, 0);
+  color: white;
   padding: 10px;
   border-radius: 5px;
 }
@@ -351,7 +353,7 @@ h2{
 }
 
 .product-expiration {
-  color: #666;
+  color: #b6b5b5;
 }
 
 /*=============SETTINGS PAGE=============*/
@@ -435,12 +437,12 @@ input[type="date"] {
 .save-changes,
 .log-out {
   position: absolute;
-  bottom: -20px; 
+  bottom: 75px; 
   color: rgb(255,163,202);
   cursor: pointer;
   font-size: 14px;
   padding: 7px; 
-  border: 2px solid rgb(255,163,202); /* Add border */
+  border: 2px solid rgb(255,163,202); 
   transition: all 0.3s ease; 
 }
 
