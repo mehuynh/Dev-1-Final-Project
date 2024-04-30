@@ -435,16 +435,12 @@ input[type="date"] {
 .save-changes,
 .log-out {
   position: absolute;
-<<<<<<< HEAD
-  bottom: 5px; 
-=======
-  bottom: -20px; 
->>>>>>> 6c2b8dc2f6510e2af34d02ce3fce668e654c4c09
+  bottom: 75px; 
   color: rgb(255,163,202);
   cursor: pointer;
   font-size: 14px;
   padding: 7px; 
-  border: 2px solid rgb(255,163,202); /* Add border */
+  border: 2px solid rgb(255,163,202); 
   transition: all 0.3s ease; 
 }
 
