@@ -85,7 +85,6 @@ h2{
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
-  padding: 10%;
 }
 
 /*=============== HEADER ===============*/
@@ -436,7 +435,11 @@ input[type="date"] {
 .save-changes,
 .log-out {
   position: absolute;
+<<<<<<< HEAD
   bottom: 5px; 
+=======
+  bottom: -20px; 
+>>>>>>> 6c2b8dc2f6510e2af34d02ce3fce668e654c4c09
   color: rgb(255,163,202);
   cursor: pointer;
   font-size: 14px;
