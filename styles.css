@@ -639,9 +639,31 @@ input[type="date"] {
 }
 
 /*=============PROFILE===============*/
+
+
+/*
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
 .header__wrapper header {
   width: 100%;
-  background: url("../img/bg.jpeg") no-repeat 50% 20% / cover;
+  background: url("compactimg/banner.jpeg") no-repeat 50% 20% / cover;
   min-height: calc(100px + 15vw);
 }
 @media (min-width: 868px) {
@@ -700,6 +722,7 @@ input[type="date"] {
 .header__wrapper .cols__container .right__col nav ul li a {
   text-transform: uppercase;
   color: #818181;
+  opacity: 0.8;
 }
 @media (min-width: 1016px) {
   .header__wrapper .cols__container .right__col nav button {
@@ -712,6 +735,8 @@ input[type="date"] {
   height: 100%;
   object-fit: cover;
 }
+
+/* Responsiveness */
 
 @media (min-width: 868px) {
   .header__wrapper .cols__container {
