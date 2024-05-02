@@ -645,6 +645,16 @@ input[type="date"] {
 }
 
 /*=============PROFILE===============*/
+
+.accordion-content a {
+  color: var(--text-dark); /* Change the color to black or any other color you prefer */
+  text-decoration: none; /* Remove underline */
+}
+
+.accordion-content a:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+}
+
 .cols__container {
   padding-bottom: 10px; /* Assuming the height of the navbar is 80px */
   height:max-content;
@@ -685,6 +695,16 @@ input[type="date"] {
   font-size: 22px;
   margin-bottom: -20px;
 }
+
+.header__wrapper .cols__container .left__col h3{
+  margin-top: -35px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color:rgb(255, 164, 211);
+  text-align: center;
+}
+
 
 .header__wrapper .cols__container .left__col .about {
   display: flex;
