@@ -102,7 +102,7 @@ function getProductsData(year) {
         ];
     }
 }
-/*=============== PROFILE PAGE ===============*/
+/*=============== SETTINGS PAGE ===============*/
 // --------------change profile pic------------//
 function previewProfilePhoto(event) {
     const file = event.target.files[0]; 
@@ -151,3 +151,17 @@ function generateCalendar() {
 }
 
 generateCalendar();
+
+/*=============== POFILE PAGE ===============*/
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all accordion items
+    var accordionItems = document.querySelectorAll('.accordion-item');
+  
+    // Collapse each accordion item
+    accordionItems.forEach(function(item) {
+      item.classList.remove('active');
+      var content = item.querySelector('.accordion-content');
+      content.style.display = 'none';
+    });
+  });
+  

@@ -6,6 +6,7 @@
     <title>Profile</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/800841e5eb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -48,110 +49,128 @@
     </header>
     <body>
         <div class="header__wrapper">
-            <header>
+            <header></header>
             <div class="cols__container">
                 <div class="left__col">
                     <div class="img__container">
-                        <img src="compactimg/pfp.webp" alt="Jane Doe">
+                        <img src="pfpimg/pfp.webp" alt="Jane Doe"/>
                         <span></span>
                     </div>
                     <h2>Jane Doe</h2>
-                    <p>Makeup Artist</p>
-                    <p>djane@usc.edu</p>
 
                     <ul class="about">
-                        <li><span>5k</span>Followers</li>
-                        <li><span>2k</span>Following</li>
+                        <li><span>4,568</span>Followers</li>
+                        <li><span>3,219</span>Following</li>
+                        <li><span>3</span>Lists</li>
                     </ul>
-                    
-                    <div class="bio">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    
-                        <ul>
-                            <li><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-pinterest"></i></li>
-                            <li><i class="fab fa-instagram"></i></li>
-                            <li><i class="fab fa-facebook"></i></li>
-                        </ul>
-                        <button>Follow</button>
-                    </div>
+
+                <div class="content">
+                    <p>🎨 Professional Makeup Artist ✨ | Passionate about enhancing beauty and boosting confidence through makeup artistry 💄 | Specializing in bridal, editorial, and special occasion makeup 💍 | Here is my cataloug of all my current makeup and skin care, as well as items on my wish list! 💫 <br>Bookings & collaborations: janedoe@usc.edu 💌 <br> #MakeupArtist #BeautyCreator 🌟</p>
+                
+                    <ul>
+                        <li><a href="https://twitter.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/instagram/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.google.com/gmail/about/"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.pinterest.com/business/create/"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
-
-                <div class="right__col">
-                    <nav>
-                    <ul>
-                        <li><a href="#">Liked Makeup</a></li>
-                        <li><a href="#">Liked Skincare</a></li>
-                        <li><a href="#">Bought Frequently</a></li>
-                        <li><a href="#">Wish List</a></li>
-                    </ul>
-                    </nav>
-
-                    <ul>
-                        <li>
-                            <label for="first">My Makeup</label>
-                            <input type="radio" name="accordion" id="first">
-                            <div class="content">
-                                <img src="compactimg/lipoil.webp">                                <img src="compactimg/lipoil.webp">
-                                <img src="compactimg/kosas.webp">
-                                <img src="compactimg/haus labs.webp">
-                                <img src="compactimg/patrickta.webp">
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
-            </header>
         </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">My Makeup<i class="fa-solid fa-greater-than"></i></div>
+            <div class="accordion-content">
+              <img src="pfpimg/MyMakeupBag/primer.webp" alt="Makeup Product">
+              <h2>E.L.F POWER GRIP PRIMER</h2>
+              <img src="pfpimg/MyMakeupBag/foundation.webp" alt="Makeup Product">
+              <h2>CHARLOTTE TILLBURY FOUNDATION</h2>
+              <img src="pfpimg/MyMakeupBag/concealer.jpeg" alt="Makeup Product">
+              <h2>NARS CONCEALER</h2>
+              <img src="pfpimg/MyMakeupBag/blush.webp" alt="Makeup Product">
+              <h2>RARE BEAUTY LIQUID BLUSH</h2>
+              <img src="pfpimg/MyMakeupBag/bronzer.webp" alt="Makeup Product">
+              <h2>MAKEUP BY MARIO BONZER</h2>
+              <img src="pfpimg/MyMakeupBag/eyebrow.webp" alt="Makeup Product">
+              <h2>ANASTASIA BEVERLY HILLS EYEBROW KIT</h2>
+              <img src="pfpimg/MyMakeupBag/lash glue.webp" alt="Makeup Product">
+              <h2>DUO LASH GLUE</h2>
+              <img src="pfpimg/MyMakeupBag/lashes.webp" alt="Makeup Product">
+              <h2>LILY LASHES - MIAMI</h2>
+              <img src="pfpimg/MyMakeupBag/eyeliner.webp" alt="Makeup Product">
+              <h2>NYX COSMETICS EPIC INK LINER - BLACK</h2>
+              <img src="pfpimg/MyMakeupBag/eyeshadow.webp" alt="Makeup Product">
+              <h2>ANASTASIA BEVERLY HILLS SOFT GLAM EYESHADOW PALETTE</h2>
+              <img src="pfpimg/MyMakeupBag/mascara.jpeg" alt="Makeup Product">
+              <h2>MILK MAKEUP WATERPROOF KUSH MASCARA</h2>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">My Skincare<i class="fa-solid fa-greater-than"></i></div>
+            <div class="accordion-content">
+                <img src="pfpimg/MySkincare/toner.webp" alt="Makeup Product">
+                <h2>GLOW RECIPE TONER</h2>
+                <img src="pfpimg/MySkincare/laroche.webp" alt="Makeup Product">
+                <h2>LA ROCHE-POSAY LOTION</h2>
+                <img src="pfpimg/MySkincare/balm cleanser.webp" alt="Makeup Product">
+                <h2>VERSED CLEANSING BALM</h2>
+                <img src="pfpimg/MySkincare/cicaplast.webp" alt="Makeup Product">
+                <h2>LA ROCHE-POSAY CICAPLAST BALM</h2>
+                <img src="pfpimg/MySkincare/drjart.jpeg" alt="Makeup Product">
+                <h2>DR.JART CICAPAIR</h2>
+                <img src="pfpimg/MySkincare/hyaluronic acid .webp" alt="Makeup Product">
+                <h2>THE ORDINARY HYALURONIC ACID + B5</h2>
+                <img src="pfpimg/MySkincare/moisturizer.webp" alt="Makeup Product">
+                <h2>LA ROCHE-POSAY FACE MOISTURIZER</h2>
+                <img src="pfpimg/MySkincare/sunscreen.jpg" alt="Makeup Product">
+                <h2>SUPERGOOP! UNSEEN SUNSCREEN SPF 40</h2>
+                <img src="pfpimg/MySkincare/vitamin C.jpeg" alt="Makeup Product">
+                <h2>JUMISO VITAMIN C</h2>
+              </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">My Wishlist<i class="fa-solid fa-greater-than"></i></div>
+            <div class="accordion-content">
+                <img src="pfpimg/My Wishlist/CT Blush wand.jpeg" alt="Makeup Product">
+                <h2>CHARLOTTE TILLBURY GLOWGASH BLUSH WAND</h2>
+                <img src="pfpimg/My Wishlist/haus labs.webp" alt="Makeup Product">
+                <h2>HAUS LABS FOUNDATION</h2>
+                <img src="pfpimg/My Wishlist/MbM Master Mattes.webp" alt="Makeup Product">
+                <h2>MAKEUP BY MARIO MATTE PALETTE</h2>
+                <img src="pfpimg/My Wishlist/sugar pop tinted sunscreen.webp" alt="Makeup Product">
+                <h2>SUPERGOOP! TINTED SUNSCREEN SPF 50</h2>
+                <img src="pfpimg/My Wishlist/water cream.webp" alt="Makeup Product">
+                <h2>TATCHA WATER CREAM</h2>
+                <img src="pfpimg/My Wishlist/summer fridays.webp" alt="Makeup Product">
+                <h2>SUMMER FRIDAYS LIP BALM</h2>
+                <img src="pfpimg/MyMakeupBag/kosas.webp" alt="Makeup Product">
+                <h2>KOSAS TINTED SUNSCREEN SPF 40</h2>
+                <img src="pfpimg/MyMakeupBag/lipoil.webp" alt="Makeup Product">
+                <h2>DIOR LIP OIL - CHERRY</h2>
+            </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.accordion-header').click(function(){
+      $(this).next('.accordion-content').slideToggle();
+      $(this).parent().toggleClass('active');
+    });
+  });
 
-<!--------
-      <div class="cols__container">
-        <div class="left__col">
-          <div class="img__container">
-            <img src="compactimg/pfp.webp" alt="Anna Smith" />
-            <span></span>
-          </div>
-          <h2>Anna Smith</h2>
-          <p>Makeup Artisit</p>
-          <p>anna@eusc.com</p>
-          <ul class="about">
-            <li><span>4,073</span>Followers</li>
-            <li><span>322</span>Following</li>
-          </ul>
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
-              erat volutpat. Morbi imperdiet, mauris ac auctor dictum, nisl
-              ligula egestas nulla.
-            </p>
-            <ul>
-              <li><i class="fab fa-twitter"></i></li>
-              <i class="fab fa-pinterest"></i>
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-dribbble"></i>
-            </ul>
-          </div>
-        </div>
-        <div class="right__col">
-          <nav>
-            <ul>
-              <li><a href="">photos</a></li>
-              <li><a href="">galleries</a></li>
-              <li><a href="">groups</a></li>
-              <li><a href="">about</a></li>
-            </ul>
-            <button>Follow</button>
-          </nav>
-          <div class="photos">
-            <img src="img/img_1.avif" alt="Photo" />
-            <img src="img/img_2.avif" alt="Photo" />
-            <img src="img/img_3.avif" alt="Photo" />
-            <img src="img/img_4.avif" alt="Photo" />
-            <img src="img/img_5.avif" alt="Photo" />
-            <img src="img/img_6.avif" alt="Photo" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+  document.addEventListener("DOMContentLoaded", function() {
+    var accordionItems = document.querySelectorAll('.accordion-item');
+  
+    accordionItems.forEach(function(item) {
+      item.classList.remove('active');
+      var content = item.querySelector('.accordion-content');
+      content.style.display = 'none';
+    });
+  });
+
+
+</script>
+    </body>
