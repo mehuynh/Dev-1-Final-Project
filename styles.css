@@ -120,56 +120,50 @@ h2{
   font-weight: 600;
 }
 
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: var(--container-color);
-    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
-    width: 100%;
-    height: 4rem;
-    padding: 0 1rem;
-    display: grid;
-    align-content: center;
-    border-radius: 1.25rem 1.25rem 0 0;
-    transition: .4s;
-  }
-}
 
-.nav__list, 
-.nav__link {
+.nav__menu {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem; 
+  background-color: var(--container-color);
+  z-index: var(--z-fixed);
   display: flex;
-}
-
-.nav__link {
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  row-gap: 4px;
-  color: var(--title-color);
-  font-weight: 6000;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
 
 .nav__list {
-  justify-content: space-around;
+  display: flex;
+  width: 100%; 
+  justify-content: space-around; 
 }
 
-.nav__name {
-  font-size: var(--tiny-font-size);
-  display: none;
+.nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--title-color);
+  font-weight: 600;
+  text-align: center;
+  padding: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: var(--first-color); 
 }
 
 .nav__icon {
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
+  display: inline-block; 
 }
 
-.nav__menu {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 0; 
-  background-color: var(--container-color);
-  z-index: var(--z-fixed);
+.nav__img, .nav__logo, .nav__name {
+  display: none; 
 }
 
 .active-link {
@@ -197,35 +191,6 @@ h2{
     justify-content: center;
     column-gap: 3rem;
   }
-}
-
-@media screen and (min-width: 767px) {
-  body {
-    margin: 0;
-  }
-  .section {
-    padding: 7rem 0 2rem;
-  }
-  .nav {
-    height: calc(var(--header-height) + 1.5rem); 
-  }
-  .nav__img {
-    display: none;
-  }
-  .nav__icon {
-    display: none;
-  }
-  .nav__name {
-    font-size: var(--normal-font-size);
-  }
-  .nav__link:hover {
-    color: var(--first-color);
-  }
-
-
-.active-link::before{
-      bottom: -.75rem;
-  } 
 }
 
 @media screen and (min-width: 1024px) {
@@ -336,8 +301,8 @@ h2{
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: rgb(255,163,202);
+  color: rgb(68, 67, 67);
   padding: 10px;
   border-radius: 5px;
 }
@@ -357,7 +322,7 @@ h2{
 }
 
 .product-expiration {
-  color: #b6b5b5;
+  color: #545353;
 }
 
 /*=============SETTINGS PAGE=============*/
@@ -645,16 +610,6 @@ input[type="date"] {
 }
 
 /*=============PROFILE===============*/
-
-.accordion-content a {
-  color: var(--text-dark); /* Change the color to black or any other color you prefer */
-  text-decoration: none; /* Remove underline */
-}
-
-.accordion-content a:hover {
-  text-decoration: underline; /* Add underline on hover if desired */
-}
-
 .cols__container {
   padding-bottom: 10px; /* Assuming the height of the navbar is 80px */
   height:max-content;
@@ -695,16 +650,6 @@ input[type="date"] {
   font-size: 22px;
   margin-bottom: -20px;
 }
-
-.header__wrapper .cols__container .left__col h3{
-  margin-top: -35px;
-  font-weight: 600;
-  font-size: 15px;
-  margin-bottom: 20px;
-  color:rgb(255, 164, 211);
-  text-align: center;
-}
-
 
 .header__wrapper .cols__container .left__col .about {
   display: flex;
